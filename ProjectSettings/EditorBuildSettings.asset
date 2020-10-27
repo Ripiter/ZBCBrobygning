@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/OurOwnStuff/Scripts/3DProjekt/StartScene.unity
+    path: Assets/OurOwnStuff/Scenes/StartScene.unity
     guid: 321d584f16e342c428fde8460be1c38f
   - enabled: 1
     path: Assets/OurOwnStuff/Scenes/Vagt_Scene.unity
     guid: 1804fd5870e895e4ea61600d2b56d1c9
   - enabled: 1
-    path: Assets/OurOwnStuff/Scripts/3DProjekt/Tutorial.unity
+    path: Assets/OurOwnStuff/Scenes/Tutorial.unity
     guid: b5a542324750d194eb52974878f58cd8
   - enabled: 1
-    path: Assets/OurOwnStuff/Scripts/3DProjekt/Settings.unity
+    path: Assets/OurOwnStuff/Scenes/Settings.unity
     guid: 1415509c7a0720045b447ac83bc3bd72
   - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Data-IT_Scene.unity
