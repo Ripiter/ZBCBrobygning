@@ -113,4 +113,9 @@ public class PourDetector : MonoBehaviour, IPickUp
             }
         }
     }
+
+    public void Droped(GameObject _droped)
+    {
+        //throw new System.NotImplementedException();
+    }
 }

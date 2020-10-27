@@ -100,15 +100,7 @@ public class PickupScript : MonoBehaviour
         if(carriedObject != null)
             carriedObject.GetComponent<Rigidbody>().isKinematic = false;
 
-        if (carriedObject != null)
-        {
-            if (carriedObject.GetComponent<MovableScript>() != null)
-            {
-
-                if (carriedObject.GetComponent<MovableScript>().isBottle)
-                    carriedObject.GetComponent<PourDetector>().StopPouring();
-            }
-        }
+        PickupManager.instance.ItemWasDropped(carriedObject);
 
         carriedObject = null;
 

@@ -47,6 +47,14 @@ public class PickupManager : MonoBehaviour
         }
     }
 
+    public void ItemWasDropped(GameObject _droped)
+    {
+        foreach (IPickUp listener in pickUps)
+        {
+            listener.Droped(_droped);
+        }
+    }
+
 
 }
 
@@ -54,5 +62,5 @@ public interface IPickUp
 {
     void PickedUp(GameObject _pickedObject);
 
-    //public void PickUp(string _message);
+    void Droped(GameObject _droped);
 }
