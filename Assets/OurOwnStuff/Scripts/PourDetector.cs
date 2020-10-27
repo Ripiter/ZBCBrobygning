@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using JetBrains.Annotations;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PourDetector : MonoBehaviour
+public class PourDetector : MonoBehaviour, IPickUp
 {
     public int pourThreshHold = 35;
     public Transform origin;
@@ -12,7 +13,10 @@ public class PourDetector : MonoBehaviour
     private StreamBottle currectStream;
 
     public string nameOfObject;
-    
+    private void Start()
+    {
+        PickupManager.instance.AddListener(this);
+    }
 
     void Update()
     {
@@ -96,5 +100,17 @@ public class PourDetector : MonoBehaviour
     {
         GameObject streamObj = Instantiate(streamPrefab, origin.position, Quaternion.identity, transform);
         return streamObj.GetComponent<StreamBottle>();
+    }
+
+    public void PickedUp(GameObject _pickedObject)
+    {
+        if (_pickedObject.GetComponent<MovableScript>() != null)
+        {
+            if (_pickedObject.GetComponent<MovableScript>().isBottle)
+            {
+                print("Picked up in pour");
+                //_pickedObject.GetComponent<PourDetector>().StartPouring();
+            }
+        }
     }
 }

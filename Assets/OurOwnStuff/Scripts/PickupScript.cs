@@ -76,13 +76,10 @@ public class PickupScript : MonoBehaviour
                     carriedObject = movable.gameObject;
                     movable.gameObject.GetComponent<Rigidbody>().isKinematic = true;
 
-                    if (movable.isCodingPiece)
-                        movable.LookAtPlayer(gameObject.transform.forward);
+                    PickupManager.instance.ItemWasPickedUp(hit.collider.gameObject);
 
-                    if (movable.isBottle)
-                    {
-                        hit.collider.gameObject.GetComponent<PourDetector>().StartPouring();
-                    }
+
+                    
                 }
             }
         }

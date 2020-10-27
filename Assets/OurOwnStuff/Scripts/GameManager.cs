@@ -35,33 +35,33 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.G))
-        {
-            SceneManager.LoadScene(0);
-        }
-        if (Input.GetKey(KeyCode.H))
-        {
-            SceneManager.LoadScene(1);
-        }
-        if (Input.GetKey(KeyCode.J))
-        {
-            SceneManager.LoadScene(2);
-        }
-        if (Input.GetKey(KeyCode.K))
-        {
-            SceneManager.LoadScene(3);
-        }
-        if (Input.GetKey(KeyCode.L))
-        {
-            SceneManager.LoadScene(4);
-        }
-        if (Input.GetKey(KeyCode.B))
-        {
-            SceneManager.LoadScene(5);
-        }
-        if (Input.GetKey(KeyCode.N))
-        {
-            SceneManager.LoadScene(6);
-        }
+        //if (Input.GetKey(KeyCode.G))
+        //{
+        //    SceneManager.LoadScene(0);
+        //}
+        //if (Input.GetKey(KeyCode.H))
+        //{
+        //    SceneManager.LoadScene(1);
+        //}
+        //if (Input.GetKey(KeyCode.J))
+        //{
+        //    SceneManager.LoadScene(2);
+        //}
+        //if (Input.GetKey(KeyCode.K))
+        //{
+        //    SceneManager.LoadScene(3);
+        //}
+        //if (Input.GetKey(KeyCode.L))
+        //{
+        //    SceneManager.LoadScene(4);
+        //}
+        //if (Input.GetKey(KeyCode.B))
+        //{
+        //    SceneManager.LoadScene(5);
+        //}
+        //if (Input.GetKey(KeyCode.N))
+        //{
+        //    SceneManager.LoadScene(6);
+        //}
     }
 }
