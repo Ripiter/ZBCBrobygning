@@ -6,7 +6,6 @@ using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityScript.Steps;
 
 public class ImageSource : MonoBehaviour
 {
