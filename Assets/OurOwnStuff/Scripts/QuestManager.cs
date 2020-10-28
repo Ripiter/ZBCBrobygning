@@ -15,7 +15,13 @@ public class QuestManager : MonoBehaviour
         { new Quest4(4, 4), false }, // Sosu
         { new Quest5(5, 3), false }, // Data-IT
         { new Quest6(6, 4), false }, // ServiceAssistant
-        { new Quest7(7, 1), false }  // Gastronom
+        { new Quest7(7, 1), false }, // Gastronom
+        { new Quest8(8, 1), false }, // Smed
+        { new Quest9(9, 1), false }, // Bager
+        { new Quest10(10, 2), false },  // Anlægsgartner
+        { new Quest11(11, 1), false },  // Ernæringsassistent
+        { new Quest12(12, 1), false },  // (Bil) Mekaniker
+        { new Quest13(13, 1), false }   // Lager og transport 
     };
 
     public GameObject questText;
