@@ -55,14 +55,15 @@ public class Quest4 : Quest
         {
             QuestManager.questManager.questText.GetComponent<Text>().text = "*Host* *Host* \n Jeg hoster så slemt for tiden";
         }
-        else if (questCounter[0] >= 1 && questCounter[1] >= 1)
+        else if (questCounter[2] < 3)
         {
-            QuestManager.questManager.questText.GetComponent<Text>().text = "Tusind tak for hjælpen";
+            QuestManager.questManager.questText.GetComponent<Text>().text = "Kan du lege med mig?";
         }
-        else if (questCounter[2] < 4)
-        {
-            QuestManager.questManager.questText.GetComponent<Text>().text = "Tusind tak for hjælpen";
-        }
+        //else if (questCounter[0] >= 1 && questCounter[1] >= 1)
+        //{
+        //    QuestManager.questManager.questText.GetComponent<Text>().text = "Tusind tak for hjælpen";
+        //}
+
 
         QuestManager.questManager.SetHandQuestText();
     }
