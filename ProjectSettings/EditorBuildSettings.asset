@@ -11,12 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/OurOwnStuff/Scenes/ErneringsAssistent.unity
     guid: 96eafd19c29dcd44aaea61ed095394d8
-  - enabled: 1
-    path: Assets/OurOwnStuff/Scenes/Tutorial.unity
-    guid: b5a542324750d194eb52974878f58cd8
-  - enabled: 1
+  - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Settings.unity
     guid: 1415509c7a0720045b447ac83bc3bd72
+  - enabled: 0
+    path: Assets/OurOwnStuff/Scenes/Tutorial.unity
+    guid: b5a542324750d194eb52974878f58cd8
   - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Gastronom_Scene.unity
     guid: fec4269a87ae4e24196e548e38fbcc4b

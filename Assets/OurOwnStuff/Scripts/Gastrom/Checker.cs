@@ -8,7 +8,7 @@ public class Checker : MonoBehaviour
     Renderer renderer;
     public TextMeshProUGUI text;
 
-   
+    GameObject plateHolding;
 
     // Start is called before the first frame update
     void Start()
@@ -23,11 +23,13 @@ public class Checker : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider collision)
     {
         if(collision.gameObject.GetComponent<Plate>() != null)
         {
             Plate plate = collision.gameObject.GetComponent<Plate>();
+            
             if (Completed(plate))
             {
                 // Change to green color
@@ -115,4 +117,5 @@ public class Checker : MonoBehaviour
         renderer.material.color = new Color(1f, 1f, 1f);
         text.text = "";
     }
+
 }

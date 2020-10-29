@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCodingPiece: 0
+  isBottle: 0
 --- !u!1 &448974340097532782
 GameObject:
   m_ObjectHideFlags: 0

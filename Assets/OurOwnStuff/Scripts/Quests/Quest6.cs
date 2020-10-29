@@ -20,7 +20,7 @@ public class Quest6 : Quest
                 UpdateText();
                 if (questCounter[0] >= 1)
                 {
-                    //SoundManager.soundManager.PlaySound();
+                    SoundManager.soundManager.PlaySound();
                 }
             }
         }
@@ -33,7 +33,7 @@ public class Quest6 : Quest
                 UpdateText();
                 if (questCounter[1] >= 3)
                 {
-                    //SoundManager.soundManager.PlaySound();
+                    SoundManager.soundManager.PlaySound();
                 }
             }
         }     
@@ -45,7 +45,7 @@ public class Quest6 : Quest
                 UpdateText();
                 if(questCounter[2] >= 4)
                 {
-                    //SoundManager.soundManager.PlaySound();
+                    SoundManager.soundManager.PlaySound();
                 }
             }
         }
@@ -58,7 +58,7 @@ public class Quest6 : Quest
                 UpdateText();
                 if (questCounter[3] >= 5)
                 {
-                    //SoundManager.soundManager.PlaySound();
+                    SoundManager.soundManager.PlaySound();
                 }
             }
         }
@@ -93,8 +93,7 @@ public class Quest6 : Quest
         if (questCounter[0] >= 1 && questCounter[1] >= 3 && questCounter[2] >= 4 && questCounter[3] >= 5)
         {
             //Enable video for victory
-            if(QuestManager.questManager.victory != null)
-                QuestManager.questManager.victory.SetActive(true);
+            QuestManager.questManager.victory.SetActive(true);
         }
     }
 }

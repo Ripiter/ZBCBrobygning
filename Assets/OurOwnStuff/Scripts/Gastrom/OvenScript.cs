@@ -23,7 +23,7 @@ public class OvenScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.GetComponentInChildren<QuestSevenObjective>() != null)
+        if(collision.gameObject.GetComponentInChildren<QuestSevenObjective>() != null || collision.gameObject.GetComponent<QuestSevenObjective>() != null)
         {
             StartCoocking(collision.gameObject);
         }

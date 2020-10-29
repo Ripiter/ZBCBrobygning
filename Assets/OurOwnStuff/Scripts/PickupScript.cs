@@ -49,17 +49,13 @@ public class PickupScript : MonoBehaviour
             mainCamera.transform.position + mainCamera.transform.forward * distance,
             smooth * Time.deltaTime);
 
-        if (Input.GetKey(KeyCode.Keypad6))
+        if (Input.GetKey(KeyCode.E))
+        {
             _o.transform.Rotate(Vector3.right * rotateSpeed * Time.deltaTime);
-        
-        if(Input.GetKey(KeyCode.Keypad4))
-            _o.transform.Rotate(Vector3.left * rotateSpeed * Time.deltaTime);
-        
-        if(Input.GetKey(KeyCode.Keypad8))
-            _o.transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
+        }
 
-        if (Input.GetKey(KeyCode.Keypad2))
-            _o.transform.Rotate(Vector3.down * rotateSpeed * Time.deltaTime);
+        if(Input.GetKey(KeyCode.Q))
+            _o.transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
     }
 
     void PickUp()

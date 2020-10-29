@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -23,7 +22,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
 
         //Sets this to not be destroyed when reloading scene
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
     }
 
@@ -36,15 +35,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKey(KeyCode.Escape))
         {
-            Application.Quit();
-            
+            SceneManager.LoadScene(0);
         }
-        //if (Input.GetKey(KeyCode.G))
-        //{
-        //    SceneManager.LoadScene(0);
-        //}
         //if (Input.GetKey(KeyCode.H))
         //{
         //    SceneManager.LoadScene(1);
