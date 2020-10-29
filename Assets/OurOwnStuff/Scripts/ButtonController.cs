@@ -12,9 +12,10 @@ public class ButtonController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+
+    public void LeaveGame()
     {
-        
+        Application.Quit();
     }
 
     public void MainMenu()
