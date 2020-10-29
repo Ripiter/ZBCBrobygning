@@ -1636,12 +1636,12 @@ PrefabInstance:
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 99
+      value: 107
       objectReference: {fileID: 0}
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
@@ -1666,7 +1666,7 @@ PrefabInstance:
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
       propertyPath: m_fontSize
-      value: 91.05
+      value: 88.85
       objectReference: {fileID: 0}
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
@@ -1676,18 +1676,8 @@ PrefabInstance:
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
       propertyPath: m_text
-      value: 'WASD - Move
-
-        Left click - Pick up
-
-        Right click -Drop
-
-        Scroll
-        - Distance change
-
-        Arrows - Rotate object
-
-'
+      value: "WASD - Bev\xE6gelse\nLeft click - Saml genstand op\nRight click -Smid
+        genstand\nScroll - \nArrows - Rotate object\n"
       objectReference: {fileID: 0}
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
