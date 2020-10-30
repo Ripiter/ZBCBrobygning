@@ -474,7 +474,7 @@ PrefabInstance:
     - target: {fileID: 6687897337759670934, guid: 460057e0d12415c4fbd1ea986e80b8c9,
         type: 3}
       propertyPath: m_MaxValue
-      value: 30
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6687897337759670934, guid: 460057e0d12415c4fbd1ea986e80b8c9,
         type: 3}
@@ -937,7 +937,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 3.05
+  m_padding: 0
   m_canvasRenderer: {fileID: 957897311}
   m_TextComponent: {fileID: 1518322801}
   m_materialReferenceIndex: 1
@@ -1636,17 +1636,17 @@ PrefabInstance:
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 107
+      value: 129
       objectReference: {fileID: 0}
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 20
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 19
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
@@ -1666,7 +1666,7 @@ PrefabInstance:
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
       propertyPath: m_fontSize
-      value: 88.85
+      value: 81.15
       objectReference: {fileID: 0}
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
@@ -1676,8 +1676,8 @@ PrefabInstance:
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
       propertyPath: m_text
-      value: "WASD - Bev\xE6gelse\nLeft click - Saml genstand op\nRight click -Smid
-        genstand\nScroll - \nArrows - Rotate object\n"
+      value: "WASD - Bev\xE6gelse\nVenstre klik - Saml genstand op\nH\xF8jre klik
+        - Smid genstand\nScroll - Zoom ind/ud\nPiletaster - Roter en genstand \n"
       objectReference: {fileID: 0}
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
@@ -1732,7 +1732,7 @@ PrefabInstance:
     - target: {fileID: 6271438337544264530, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6271438337544264530, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}

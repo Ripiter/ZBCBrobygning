@@ -21,7 +21,8 @@ public class Bake : MonoBehaviour
         recipe.Add("Tilsæt Mel");
         recipe.Add("Tilsæt Salt");
         recipe.Add("");
-        recipe.Add("Put boller i oven" + "\n" + "og vent til de er brune");
+        recipe.Add("Put boller i oven" + "\n" + "Når dine boller er færdige" + "\n" +  "er det tid til at lave pynte en kage");
+        
        
         
     }
@@ -36,6 +37,8 @@ public class Bake : MonoBehaviour
     }
     public void OnCollisionEnter(Collision collision)
     {
+        if(collision.gameObject.GetComponent<NameOfObject>() != null)
+        {
 
         if (collision.gameObject.GetComponent<NameOfObject>().objectName == recipe[count])
         {
@@ -43,6 +46,7 @@ public class Bake : MonoBehaviour
             Destroy(collision.gameObject);
             count++;
             Debug.Log(collision.gameObject.GetComponent<NameOfObject>().objectName);
+        }
         }
         
         //Recipe 

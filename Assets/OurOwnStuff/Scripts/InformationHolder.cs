@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class InformationHolder
 {
-    public static float Sensivity = 5;
+    public static float Sensivity = 50;
 
 }
