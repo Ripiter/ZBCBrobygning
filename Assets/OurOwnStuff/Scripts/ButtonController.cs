@@ -5,10 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class ButtonController : MonoBehaviour
 {
+    public GameObject eventSystem;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (GameObject.Find("EventSystem") == null)
+        {
+            Instantiate(eventSystem);
+            print("Spawned event system");
+        }
     }
 
     // Update is called once per frame
@@ -36,5 +41,10 @@ public class ButtonController : MonoBehaviour
     public void Settings()
     {
         SceneManager.LoadScene("Settings");
+    }
+
+    public void Resume()
+    {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<MovementPlayer>().ChangeCanvas();
     }
 }

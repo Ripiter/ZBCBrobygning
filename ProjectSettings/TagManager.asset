@@ -29,6 +29,8 @@ TagManager:
   - Floor
   - Cloth
   - Filth
+  - PauseMenu
+  - "Hvidk\xE5l"
   layers:
   - Default
   - TransparentFX
