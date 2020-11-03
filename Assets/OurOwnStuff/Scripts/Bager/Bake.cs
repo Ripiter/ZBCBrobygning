@@ -13,7 +13,7 @@ public class Bake : MonoBehaviour
   
     void Start()
     {
-        recipe.Add("Tilsæt Vand");
+        recipe.Add("Du skal nu bage boller, start med at tilsæt Vand");
         recipe.Add("Tilsæt Mælk");
         recipe.Add("Tilsæt Gær");
         recipe.Add("Tilsæt Olie");

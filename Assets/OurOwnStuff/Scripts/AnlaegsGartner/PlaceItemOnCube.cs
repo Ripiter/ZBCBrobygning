@@ -1,33 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlaceItemOnCube : MonoBehaviour
 {
+
     public GameObject prefab;
     public string name;
+
+    string CurrentlyCount;
+    public Text text;
+
     // Start is called before the first frame update
     void Start()
     {
         
+        //Task.Add($"Plant Træere {TreeCount} / {TreesToPlant}");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Stuff");
         if (other.gameObject.GetComponent<NameOfObject>() != null)
         {
             if (other.gameObject.GetComponent<NameOfObject>().objectName == name)
             {
-                Destroy(other.gameObject);
+                Debug.Log("Tree Planted");
+                PlantManager.instance.AddToCount(name);
+                PlantManager.instance.SpawnObject(other.gameObject, prefab, GetVector(other.gameObject.GetComponent<NameOfObject>().objectName));
                 Destroy(gameObject);
-                prefab.GetComponent<Rigidbody>().isKinematic = true;
-                Instantiate(prefab, GetVector(other.gameObject.GetComponent<NameOfObject>().objectName), Quaternion.identity);
             }
         }
     }
@@ -46,4 +51,6 @@ public class PlaceItemOnCube : MonoBehaviour
         }
         return Vector3.zero;
     }
+
+
 }

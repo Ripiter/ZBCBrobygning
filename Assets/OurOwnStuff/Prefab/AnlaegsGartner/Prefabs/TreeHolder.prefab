@@ -123,5 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482d5124d9b924d4ea126ec9807584eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2870715944420806647, guid: 1c4d6d2501061b940b7f83cdd2a6ad14, type: 3}
+  prefab: {fileID: 3706331003888524891, guid: 20914e4bf7e6326489ff65eef4ec6842, type: 3}
   name: Tree
+  text: {fileID: 0}

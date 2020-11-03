@@ -6,6 +6,14 @@ public class ObjectSpawner : MonoBehaviour
 {
     public GameObject SpawnObject;
 
+    private int spawnedTrees = 0;
+    public int MaxTreeObjectToSpawn = 5;
+
+    private int spawnedBush = 0;
+    public int MaxBushObjectToSpawn = 7;
+
+    private int spawnedTile = 0;
+    public int MaxTileObjectToSpawn = 13;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,21 +40,46 @@ public class ObjectSpawner : MonoBehaviour
         if (gameObject.GetComponent<NameOfObject>() != null)
         {
             string nameOfObject = gameObject.GetComponent<NameOfObject>().objectName;
+
             if (nameOfObject == "TreeSpawnerCube")
             {
-                Instantiate(SpawnObject, new Vector3(50, 0, 25), Quaternion.identity);
+                if (spawnedTrees <= MaxTreeObjectToSpawn)
+                {
+                    spawnedTrees++;
+                    Instantiate(SpawnObject, new Vector3(50, 0, 25), Quaternion.identity);
+                }
+                else
+                {
+                    DestroyImmediate(SpawnObject, true);
+                }
             }
             else if (nameOfObject == "BushSpawnerCube")
             {
-                Instantiate(SpawnObject, new Vector3(45, 0.5f, 25), Quaternion.identity);
+                if (spawnedBush <= MaxBushObjectToSpawn)
+                {
+                    spawnedBush++;
+                    Instantiate(SpawnObject, new Vector3(45, 0.5f, 25), Quaternion.identity);
+                }
+                else
+                {
+                    DestroyImmediate(SpawnObject, true);
+                }
             }
             else if (nameOfObject == "TileSpawnerCube")
             {
-                Instantiate(SpawnObject, new Vector3(55, 0, 25), Quaternion.identity);
+                if (spawnedTile <= MaxTileObjectToSpawn)
+                {
+                    spawnedTile++;
+                    Instantiate(SpawnObject, new Vector3(55, 0, 25), Quaternion.identity);
+                }
+                else
+                {
+                    DestroyImmediate(SpawnObject, true);
+                }
             }
-            yield return new WaitForSeconds(1);
+            yield return nameOfObject;
         }
+
+
     }
-
-
 }

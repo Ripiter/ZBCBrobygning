@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Tjener.unity
     guid: a1ec38eca6d621c4fb286473f9e77d42
+  - enabled: 0
+    path: Assets/OurOwnStuff/Scenes/SalgsAssistent.unity
+    guid: f49996d445b48db42be1f142e55dae1b
   m_configObjects: {}
