@@ -18,13 +18,16 @@ public class CameControllerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * InformationHolder.Sensivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * InformationHolder.Sensivity * Time.deltaTime;
+        if (playerBody.gameObject.GetComponent<MovementPlayer>().playerInMenu == false)
+        {
+            float mouseX = Input.GetAxis("Mouse X") * InformationHolder.Sensivity * Time.deltaTime;
+            float mouseY = Input.GetAxis("Mouse Y") * InformationHolder.Sensivity * Time.deltaTime;
 
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+            xRotation -= mouseY;
+            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+            transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
-        playerBody.Rotate(Vector3.up * mouseX);
+            playerBody.Rotate(Vector3.up * mouseX);
+        }
     }
 }
