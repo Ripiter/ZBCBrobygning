@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,9 +9,9 @@ public class Bake : MonoBehaviour
     public GameObject SpawnObjekt;
     List<string> recipe = new List<string>();
     public int count = 0;
-   public Text text;
+    public TextMeshProUGUI text;
     // Start is called before the first frame update
-  
+
     void Start()
     {
         recipe.Add("Du skal nu bage boller, start med at tilsæt Vand");
@@ -21,10 +22,10 @@ public class Bake : MonoBehaviour
         recipe.Add("Tilsæt Mel");
         recipe.Add("Tilsæt Salt");
         recipe.Add("");
-        recipe.Add("Put boller i oven" + "\n" + "Når dine boller er færdige" + "\n" +  "er det tid til at lave pynte en kage");
-        
-       
-        
+        recipe.Add("Put boller i oven" + "\n" + "Når dine boller er færdige" + "\n" + "er det tid til at lave pynte en kage");
+
+
+
     }
 
     // Update is called once per frame
@@ -37,18 +38,18 @@ public class Bake : MonoBehaviour
     }
     public void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.GetComponent<NameOfObject>() != null)
+        if (collision.gameObject.GetComponent<NameOfObject>() != null)
         {
 
-        if (collision.gameObject.GetComponent<NameOfObject>().objectName == recipe[count])
-        {
-           
-            Destroy(collision.gameObject);
-            count++;
-            Debug.Log(collision.gameObject.GetComponent<NameOfObject>().objectName);
+            if (collision.gameObject.GetComponent<NameOfObject>().objectName == recipe[count])
+            {
+
+                Destroy(collision.gameObject);
+                count++;
+                Debug.Log(collision.gameObject.GetComponent<NameOfObject>().objectName);
+            }
         }
-        }
-        
+
         //Recipe 
         // Water and milk
         //Yeast
@@ -62,12 +63,12 @@ public class Bake : MonoBehaviour
     {
         if (count == 7)
         {
-            
+
             Instantiate(SpawnObjekt, new Vector3(-1.457f, 0.812f, 7.747f), Quaternion.identity);
             count++;
         }
 
-     
-    
+
+
     }
 }
