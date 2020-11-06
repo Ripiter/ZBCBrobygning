@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af52ce4f3a529cd46b605a3a76124685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventSystem: {fileID: 0}
 --- !u!114 &199900820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1080,6 +1081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af52ce4f3a529cd46b605a3a76124685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventSystem: {fileID: 0}
 --- !u!114 &1060637823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1535,6 +1537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af52ce4f3a529cd46b605a3a76124685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventSystem: {fileID: 0}
 --- !u!114 &1413049979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1636,7 +1639,7 @@ PrefabInstance:
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 129
+      value: 131
       objectReference: {fileID: 0}
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
@@ -1646,7 +1649,7 @@ PrefabInstance:
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 24
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
@@ -1676,8 +1679,8 @@ PrefabInstance:
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
       propertyPath: m_text
-      value: "WASD - Bev\xE6gelse\nVenstre klik - Saml genstand op\nH\xF8jre klik
-        - Smid genstand\nScroll - Zoom ind/ud\nPiletaster - Roter en genstand \n"
+      value: "W,A,S,D - Bev\xE6gelse\nVenstre klik - Saml genstand op\nH\xF8jre klik
+        - Smid genstand\nScroll - Zoom ind/ud\nPiletaster - Drej en genstand \n"
       objectReference: {fileID: 0}
     - target: {fileID: 6271438337544264529, guid: 9376efdb9eacd1e499c5a3f3d5f1150b,
         type: 3}
@@ -2429,6 +2432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af52ce4f3a529cd46b605a3a76124685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventSystem: {fileID: 0}
 --- !u!114 &2010844004
 MonoBehaviour:
   m_ObjectHideFlags: 0

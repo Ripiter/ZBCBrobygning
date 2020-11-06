@@ -9,12 +9,13 @@ public class PickupScript : MonoBehaviour
     bool carrying;
     GameObject carriedObject;
     public float distance;
+    float curDistance;
     public float smooth;
     float rotateSpeed = 100;
     // Start is called before the first frame update
     void Start()
     {
-
+        curDistance = distance;
     }
 
     // Update is called once per frame
@@ -22,13 +23,13 @@ public class PickupScript : MonoBehaviour
     {
         if (carriedObject == null)
             DropObject();
-        
+
         if (carrying)
         {
             Carry(carriedObject);
             CheckDrop();
 
-            distance += Input.GetAxis("Mouse ScrollWheel");
+            curDistance += Input.GetAxis("Mouse ScrollWheel");
         }
         else
         {
@@ -40,7 +41,7 @@ public class PickupScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow))
             _o.transform.Rotate(Vector3.right * rotateSpeed * Time.deltaTime);
-      
+
         if (Input.GetKey(KeyCode.UpArrow))
             _o.transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
 
@@ -55,10 +56,10 @@ public class PickupScript : MonoBehaviour
     void Carry(GameObject _o)
     {
         _o.transform.position = Vector3.Lerp(_o.transform.position,
-            mainCamera.transform.position + mainCamera.transform.forward * distance,
+            mainCamera.transform.position + mainCamera.transform.forward * curDistance,
             smooth * Time.deltaTime);
 
-        if(_o.GetComponent<MovableScript>() != null)
+        if (_o.GetComponent<MovableScript>() != null)
         {
             if (_o.GetComponent<MovableScript>().canRotate)
                 RotateObject(_o);
@@ -105,7 +106,7 @@ public class PickupScript : MonoBehaviour
             carriedObject.GetComponent<Rigidbody>().isKinematic = false;
 
         PickupManager.instance.ItemWasDropped(carriedObject);
-
+        curDistance = distance;
         carriedObject = null;
     }
 }
