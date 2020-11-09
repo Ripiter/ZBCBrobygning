@@ -208,12 +208,12 @@ PrefabInstance:
     - target: {fileID: 2453839523044315344, guid: 07ef84487d387d64abf542c80b513d9a,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 5
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2453839523044315344, guid: 07ef84487d387d64abf542c80b513d9a,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2453839523044315344, guid: 07ef84487d387d64abf542c80b513d9a,
         type: 3}
@@ -229,6 +229,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453839523044315344, guid: 07ef84487d387d64abf542c80b513d9a,
+        type: 3}
+      propertyPath: m_text
+      value: Hovedmenu
       objectReference: {fileID: 0}
     - target: {fileID: 3662571661406073261, guid: 07ef84487d387d64abf542c80b513d9a,
         type: 3}
@@ -260,6 +265,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961777812240295326, guid: 07ef84487d387d64abf542c80b513d9a,
+        type: 3}
+      propertyPath: m_text
+      value: "F\xF8lsomhed:"
       objectReference: {fileID: 0}
     - target: {fileID: 5467412385662091624, guid: 07ef84487d387d64abf542c80b513d9a,
         type: 3}
@@ -294,12 +304,12 @@ PrefabInstance:
     - target: {fileID: 6378255241984145519, guid: 07ef84487d387d64abf542c80b513d9a,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 6
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6378255241984145519, guid: 07ef84487d387d64abf542c80b513d9a,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6378255241984145519, guid: 07ef84487d387d64abf542c80b513d9a,
         type: 3}
@@ -309,17 +319,27 @@ PrefabInstance:
     - target: {fileID: 6378255241984145519, guid: 07ef84487d387d64abf542c80b513d9a,
         type: 3}
       propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378255241984145519, guid: 07ef84487d387d64abf542c80b513d9a,
+        type: 3}
+      propertyPath: m_text
+      value: "Forts\xE6t spil"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378255241984145519, guid: 07ef84487d387d64abf542c80b513d9a,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7208954138892135590, guid: 07ef84487d387d64abf542c80b513d9a,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 5
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7208954138892135590, guid: 07ef84487d387d64abf542c80b513d9a,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7208954138892135590, guid: 07ef84487d387d64abf542c80b513d9a,
         type: 3}
@@ -329,6 +349,16 @@ PrefabInstance:
     - target: {fileID: 7208954138892135590, guid: 07ef84487d387d64abf542c80b513d9a,
         type: 3}
       propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208954138892135590, guid: 07ef84487d387d64abf542c80b513d9a,
+        type: 3}
+      propertyPath: m_text
+      value: Forlad spil
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208954138892135590, guid: 07ef84487d387d64abf542c80b513d9a,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

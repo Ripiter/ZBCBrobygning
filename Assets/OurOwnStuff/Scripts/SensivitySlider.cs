@@ -25,6 +25,6 @@ public class SensivitySlider : MonoBehaviour
     public void OnValueChanged(float newValue)
     {
         InformationHolder.Sensivity = slider.value;
-        sliderValue.GetComponent<TextMeshProUGUI>().text = "Sensivity: " + InformationHolder.Sensivity.ToString("0.0");
+        sliderValue.GetComponent<TextMeshProUGUI>().text = "Følsomhed: " + InformationHolder.Sensivity.ToString("0.0");
     }
 }

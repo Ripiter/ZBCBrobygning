@@ -50,15 +50,16 @@ public class Quest3 : Quest
             }
         }
 
+                UpdateText();
         CheckForVictory();
     }
 
     public override void UpdateText()
     {
-        QuestManager.questManager.questText.GetComponent<Text>().text = "Scan med mobilen QR koderne ved følgende kontrolpunkter: \n" + "\n"
-        + "Kontroller Vindue " + questCounter[0] + "/" + "1" + "\n"
-        + "Kontroller Lys " + questCounter[1] + "/" + "1" + "\n"
-        + "Kontroller Kaffemaskine " + questCounter[2] + "/" + "1" + "\n"
+        QuestManager.questManager.questText.GetComponent<TextMeshProUGUI>().text = "Scan med mobilen QR koderne ved følgende kontrolpunkter: \n" + "\n"
+        + "- Vindue " + questCounter[0] + "/" + "1" + "\n"
+        + "- Lys " + questCounter[1] + "/" + "1" + "\n"
+        + "- Kaffemaskine " + questCounter[2] + "/" + "1" + "\n"
         + "Tænd alarm " + questCounter[3] + "/" + "1";
 
         QuestManager.questManager.SetHandQuestText();

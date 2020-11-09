@@ -49,6 +49,7 @@ public class Quest2 : Quest
                 //SoundManager.soundManager.PlaySound();
             }
         }
+        UpdateText();
         CheckForVictory();
     }
 

@@ -110,4 +110,14 @@ public class KitchenManager : MonoBehaviour
             //QuestManager.questManager.handQuestText.GetComponent<TextMeshProUGUI>().text = orderText.text;
         }
     }
+
+    public bool CanBeAddedToPlate(string _name)
+    {
+        for (int i = 0; i < requied.Length; i++)
+        {
+            if (requied[i] == _name)
+                return true;
+        }
+        return false;
+    }
 }

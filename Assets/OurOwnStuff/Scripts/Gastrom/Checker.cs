@@ -72,7 +72,7 @@ public class Checker : MonoBehaviour
             if (!plate.objectsNameOnPlate.Contains(KitchenManager.instance.requied[i]))
             {
                 //  Set text that there is someting missing
-                text.text = "Ingredient is missing";
+                text.text = "Ingrediens mangler";
 
                 return false;
             }
@@ -81,7 +81,7 @@ public class Checker : MonoBehaviour
         if(Infected(plate) == true)
         {
             // Set text that there is infected ingredient
-            text.text = "There is a infected food";
+            text.text = "Vask maden på tallerkenen";
 
             return false;
         }

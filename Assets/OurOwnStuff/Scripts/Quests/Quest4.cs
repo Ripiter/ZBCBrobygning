@@ -49,19 +49,19 @@ public class Quest4 : Quest
     {
         if (questCounter[0] <= 0)
         {
-            QuestManager.questManager.questText.GetComponent<Text>().text = "Jeg ligger ikke så godt";
+            QuestManager.questManager.questText.GetComponent<TextMeshProUGUI>().text = "Jeg ligger ikke så godt";
         }
         else if (questCounter[1] <= 0)
         {
-            QuestManager.questManager.questText.GetComponent<Text>().text = "*Host* *Host* \n Jeg hoster så slemt for tiden";
+            QuestManager.questManager.questText.GetComponent<TextMeshProUGUI>().text = "*Host* *Host* \n Jeg hoster så slemt for tiden";
         }
         else if (questCounter[0] >= 1 && questCounter[1] >= 1)
         {
-            QuestManager.questManager.questText.GetComponent<Text>().text = "Tusind tak for hjælpen";
+            QuestManager.questManager.questText.GetComponent<TextMeshProUGUI>().text = "Tusind tak for hjælpen";
         }
         else if (questCounter[2] < 4)
         {
-            QuestManager.questManager.questText.GetComponent<Text>().text = "Tusind tak for hjælpen";
+            QuestManager.questManager.questText.GetComponent<TextMeshProUGUI>().text = "Tusind tak for hjælpen";
         }
 
         QuestManager.questManager.SetHandQuestText();
