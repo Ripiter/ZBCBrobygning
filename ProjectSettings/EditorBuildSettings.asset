@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/OurOwnStuff/Scenes/StartScene.unity
     guid: 321d584f16e342c428fde8460be1c38f
-  - enabled: 1
+  - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Serviceassistent_Scene.unity
     guid: b8a2e0c5b73b2314792e31d78a53eac8
   - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Data-IT_Scene.unity
     guid: fa6e86efd2401744895a026c897f0d8d
-  - enabled: 0
+  - enabled: 1
     path: Assets/OurOwnStuff/Scenes/Gastronom_Scene.unity
     guid: fec4269a87ae4e24196e548e38fbcc4b
   - enabled: 0
@@ -53,7 +53,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OurOwnStuff/Scenes/SalgsAssistent.unity
     guid: f49996d445b48db42be1f142e55dae1b
-  - enabled: 1
+  - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Industritekniker.unity
     guid: 89c34a14e9fb1694493f3fa12b15fc94
   m_configObjects: {}

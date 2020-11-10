@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
@@ -18,7 +19,7 @@ public class PlantManager : MonoBehaviour
     public int TileToPlant = 14;
 
     public static PlantManager instance = null;
-    public Text text;
+    public TextMeshProUGUI text;
     private void Awake()
     {
         if (instance == null)

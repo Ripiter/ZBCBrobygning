@@ -6817,7 +6817,7 @@ MonoBehaviour:
   orders:
   - "K\xF8d"
   - "Salat,Skivet k\xF8d"
-  - "Skivet stegt k\xF8d,Sos"
+  - "Skivet stegt k\xF8d,og Sovs"
   orderText: {fileID: 968997377}
   plateSpawnPoint: {fileID: 1577146684}
 --- !u!4 &682383170
