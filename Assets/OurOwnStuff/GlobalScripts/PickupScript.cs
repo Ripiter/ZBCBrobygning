@@ -82,8 +82,10 @@ public class PickupScript : MonoBehaviour
                 {
                     carrying = true;
                     carriedObject = movable.gameObject;
-                    movable.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-
+                    if (movable.gameObject.GetComponent<Rigidbody>() != null)
+                    {
+                        movable.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+                    }
                     PickupManager.instance.ItemWasPickedUp(hit.collider.gameObject);
                 }
             }
