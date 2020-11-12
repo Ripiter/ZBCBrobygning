@@ -51,6 +51,17 @@ public class ItemSpawnersalg : MonoBehaviour
                         Instantiate(prefab, GetVector(other.gameObject.GetComponent<NameOfObject>().objectName), Quaternion.identity);
                         count++;
                         break;
+                    case "Kitkat":
+                        prefab.GetComponent<Rigidbody>().isKinematic = true;
+                        Instantiate(prefab, GetVector(other.gameObject.GetComponent<NameOfObject>().objectName), Quaternion.Euler(0,0,90f));
+                        count++;
+                        break;
+                    case "Fanta":
+                        prefab.GetComponent<Rigidbody>().isKinematic = true;
+                        Instantiate(prefab, GetVector(other.gameObject.GetComponent<NameOfObject>().objectName), Quaternion.Euler(-90f, 90f, 90f));
+                        count++;
+
+                        break;
                     default:
                         break;
                 }
@@ -68,8 +79,12 @@ public class ItemSpawnersalg : MonoBehaviour
                 return new Vector3(transform.position.x, transform.position.y + 0.1f, transform.position.z);
             case "Peanuts":
                 return new Vector3(transform.position.x, transform.position.y + 0.15f, transform.position.z);
-            default:
-                break;
+            case "Kitkat":
+                return new Vector3(transform.position.x + 0.17f, transform.position.y - 0.03f, transform.position.z);
+            
+            case "Fanta":
+                return new Vector3(transform.position.x, transform.position.y + 0.35f, transform.position.z);
+                
         }
         return Vector3.zero;
     }

@@ -20,6 +20,9 @@ public class PlantManager : MonoBehaviour
 
     public static PlantManager instance = null;
     public TextMeshProUGUI text;
+
+    public int TotalCount;
+
     private void Awake()
     {
         if (instance == null)
@@ -35,8 +38,7 @@ public class PlantManager : MonoBehaviour
     }
     // Start is called before the first frame update
     void Start()
-    {
-        
+    {   
         Victory();
     }
 
@@ -65,6 +67,7 @@ public class PlantManager : MonoBehaviour
 
     public void AddToCount(string countName)
     {
+        TotalCount++;
         switch (countName)
         {
             case "Tree":
@@ -79,5 +82,14 @@ public class PlantManager : MonoBehaviour
         }
     }
 
+    public int GetTotalCount()
+    {
+        return TotalCount;
+    }
+
+    public int GetTotalToPlant()
+    {
+        return (TreesToPlant + BushToPlant + TileToPlant);
+    }
     
 }

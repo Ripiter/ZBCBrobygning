@@ -12,24 +12,13 @@ public class PlaceItemOnCube : MonoBehaviour
     string CurrentlyCount;
     public Text text;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-        //Task.Add($"Plant Træere {TreeCount} / {TreesToPlant}");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<NameOfObject>() != null)
         {
             if (other.gameObject.GetComponent<NameOfObject>().objectName == name)
             {
-                Debug.Log("Tree Planted");
+                Debug.Log("Planted object");
                 PlantManager.instance.AddToCount(name);
                 PlantManager.instance.SpawnObject(other.gameObject, prefab, GetVector(other.gameObject.GetComponent<NameOfObject>().objectName));
                 Destroy(gameObject);

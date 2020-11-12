@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class BakeBread : MonoBehaviour
 {
     public Material mat;
+    public bool isBaked;
    
    
     Color brown = new Color(0.7830189f, 0.405858f, 0);
@@ -23,22 +24,15 @@ public class BakeBread : MonoBehaviour
     private IEnumerator OnCollisionEnter(Collision collision)
     {
         
-            if (collision.gameObject.GetComponent<NameOfObject>() != null)
+        if (collision.gameObject.GetComponent<NameOfObject>() != null)
+        {
+            if (collision.gameObject.GetComponent<NameOfObject>().objectName == "Boller")
             {
-                if (collision.gameObject.GetComponent<NameOfObject>().objectName == "Boller")
-                {
 
                 yield return new WaitForSeconds(2);
-                    mat.color = brown;
-                   
-
-
-
-
-            }
-        }
-        
+                isBaked = true;
+                mat.color = brown;
+            }   
+        }   
     }
-
-
 }
