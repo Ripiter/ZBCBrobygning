@@ -60,7 +60,7 @@ public class Quest2 : Quest
         + "Skær et stykke kød " + questCounter[2] + "/" + "1" + "\n"
         + "Bank stykket " + questCounter[3] + "/" + "1";
 
-        QuestManager.questManager.SetHandQuestText();
+        //QuestManager.questManager.SetHandQuestText();
     }
     public override void CheckForVictory()
     {

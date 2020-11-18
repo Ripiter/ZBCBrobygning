@@ -25,6 +25,8 @@ public class Recipes : MonoBehaviour
 
     public TextMeshProUGUI RecipesText;
 
+    public GameObject videoPlayer;
+
     private void Start()
     {
         StartCoroutine(SpawnFood());
@@ -46,6 +48,7 @@ public class Recipes : MonoBehaviour
         player.GetComponent<MovementPlayer>().playerInMenu = false;
         Cursor.lockState = CursorLockMode.Locked;
 
+        videoPlayer.SetActive(true);
         StartCoroutine(SpawnFood());
     }
 

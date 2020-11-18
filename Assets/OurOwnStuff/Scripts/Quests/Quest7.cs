@@ -37,7 +37,7 @@ public class Quest7 : Quest
     {
         if (questCounter[0] >= KitchenManager.instance.startPlateCount)
         {
-            // You win
+            KitchenManager.instance.videoPlayer.SetActive(true);
             Debug.Log("Win");
         }
 

@@ -4774,6 +4774,52 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 52fc4569a8b48af41803a4cd33ec093d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f616da8b83bfb3541af0dfe8d4a1199a, type: 3}
+--- !u!1 &868743099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868743101}
+  - component: {fileID: 868743100}
+  m_Layer: 0
+  m_Name: Windetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &868743100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868743099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8882e579efd0bc24b827e4a8e15e5527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partoneComplete: 0
+  parttwoComplete: 0
+  videoPlayer: {fileID: 1162058072}
+--- !u!4 &868743101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868743099}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.936257, y: 1.8308349, z: -7.550697}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &877679412
 GameObject:
   m_ObjectHideFlags: 0
@@ -5508,7 +5554,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NameOfObject: PartOne
   Prefab: {fileID: 6312980800191184945, guid: c9de01b38ad941b44bc0cd027b2d5459, type: 3}
-  isComplete: 0
+  part: 1
+  windetector: {fileID: 868743099}
 --- !u!65 &977115372
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6022,48 +6069,26 @@ GameObject:
   - component: {fileID: 1162058075}
   - component: {fileID: 1162058074}
   - component: {fileID: 1162058073}
-  - component: {fileID: 1162058078}
   m_Layer: 0
   m_Name: VideoPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!328 &1162058073
-VideoPlayer:
+  m_IsActive: 0
+--- !u!114 &1162058073
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162058072}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: b377f772c2ed29a4ca3d48e06e1f95a1, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 3
-  m_AspectRatio: 2
-  m_DataSource: 0
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
-  m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 0
-  m_SkipOnDrop: 1
-  m_Looping: 0
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f85aed8deea67d41988e34d9ef6b673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VideoName: Mekaniker
 --- !u!65 &1162058074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6138,21 +6163,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1162058078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1162058072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a87c99f4e4e63ff43a15c9f57527b293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  partOne: {fileID: 977115369}
-  partTwo: {fileID: 5542702106517244496}
-  videoPlayer: {fileID: 1162058073}
 --- !u!1 &1162244649 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 4ebaa1f9ba6ae3341b9e6bc74a1b8bfa,
@@ -10204,7 +10214,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NameOfObject: PartTwo
   Prefab: {fileID: 7977725327259938176, guid: 01b3ab3ea5c61604d9b01a6d40d75e82, type: 3}
-  isComplete: 0
+  part: 2
+  windetector: {fileID: 868743099}
 --- !u!65 &5542702106517244498
 BoxCollider:
   m_ObjectHideFlags: 0

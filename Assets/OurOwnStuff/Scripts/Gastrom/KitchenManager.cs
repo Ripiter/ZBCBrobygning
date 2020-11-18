@@ -15,6 +15,7 @@ public class KitchenManager : MonoBehaviour
     public List<string> orders = new List<string>();
     public TextMeshProUGUI orderText;
     public Transform plateSpawnPoint;
+    public GameObject videoPlayer;
     Plate currentPlate;
 
     public static KitchenManager instance = null;

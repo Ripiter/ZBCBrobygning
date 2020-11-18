@@ -102,7 +102,7 @@ public class QuestManager : MonoBehaviour
             if (GameObject.FindGameObjectWithTag("Victory") != null)
             {
                 victory = GameObject.FindGameObjectWithTag("Victory");
-                victory.SetActive(false);
+                victory.SetActive(true);
             }
         }
     }

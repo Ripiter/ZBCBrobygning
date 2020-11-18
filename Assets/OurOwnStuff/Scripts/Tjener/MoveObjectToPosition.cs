@@ -6,6 +6,8 @@ public class MoveObjectToPosition : MonoBehaviour
 {
     public string objectName;
     public GameObject prefab;
+    public GameObject finishedSet;
+    public GameObject winDetector;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<NameOfObject>() != null)
@@ -14,7 +16,9 @@ public class MoveObjectToPosition : MonoBehaviour
             {
                 GameObject spawned = Instantiate(prefab, transform.position, Quaternion.identity);
                 spawned.transform.rotation = transform.rotation;
+                spawned.transform.SetParent(finishedSet.transform);
                 Destroy(other.gameObject);
+                winDetector.GetComponent<WinDetector_Tjener>().CheckForWin(finishedSet.transform.childCount);
             }
         }
     }

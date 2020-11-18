@@ -8,7 +8,9 @@ public class EngineInPlace : MonoBehaviour
 {
     public string NameOfObject;
     public GameObject Prefab;
-    public bool isComplete;
+
+    public int part;
+    public GameObject windetector;
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +23,11 @@ public class EngineInPlace : MonoBehaviour
         {
             print(other.gameObject.GetComponent<NameOfObject>().objectName);
             if (other.gameObject.GetComponent<NameOfObject>().objectName == NameOfObject)
-            {
-                isComplete = true;
+            { 
                 GameObject spawned =  Instantiate(Prefab, transform);
                 spawned.transform.localScale = other.transform.localScale;
                 Destroy(other.gameObject);
+                windetector.GetComponent<WinDetector_Mekaniker>().UpdateParts(part);
             }
         }
     }

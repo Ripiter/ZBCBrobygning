@@ -3,15 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Logic : MonoBehaviour
 {
     int correctAnswers = 1;
     public TextMeshProUGUI text;
+    public GameObject videoPlayer;
     int newNum;
     int tempNum;
     int count = 1;
+    private bool isDone;
 
     ImageEneringsassistent currentImage;
     // Start is called before the first frame update
@@ -25,9 +26,14 @@ public class Logic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ImageSource.instance.imglist.Count == 0)
+        if (!isDone)
         {
-            text.text = $"Du fik {correctAnswers} ud af 10";
+            if (ImageSource.instance.imglist.Count == 0)
+            {
+                isDone = true;
+                videoPlayer.SetActive(true);
+                text.text = $"Du fik {correctAnswers} ud af 10";
+            }
         }
     }
     private void OnCollisionEnter(Collision col)

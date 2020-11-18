@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Data-IT_Scene.unity
     guid: fa6e86efd2401744895a026c897f0d8d
-  - enabled: 1
+  - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Gastronom_Scene.unity
     guid: fec4269a87ae4e24196e548e38fbcc4b
   - enabled: 0
@@ -41,7 +41,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OurOwnStuff/Scenes/AnlaegsGartner.unity
     guid: 765eaf00f61bf0c4187d9ae58d94fefe
-  - enabled: 0
+  - enabled: 1
     path: Assets/OurOwnStuff/Scenes/Transport.unity
     guid: d56afb49692c57b40ad120c8e5cade8f
   - enabled: 0
@@ -56,4 +56,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Industritekniker.unity
     guid: 89c34a14e9fb1694493f3fa12b15fc94
+  - enabled: 0
+    path: Assets/OurOwnStuff/Scenes/Kok.unity
+    guid: 88fdececf87a27940ac6df9d473865a8
+  - enabled: 0
+    path: Assets/OurOwnStuff/Scenes/Mekaniker.unity
+    guid: a5761e37b92fc4840bf61c47ce03c8af
   m_configObjects: {}
