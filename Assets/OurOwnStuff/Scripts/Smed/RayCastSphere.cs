@@ -8,6 +8,7 @@ public class RayCastSphere : MonoBehaviour
 
     public float xSize;
     public float lookDistance;
+    public GameObject Spark;
     public GameObject SmeltCircle;
     public GameObject CircleFolder;
     public GameObject videoPlayer;
@@ -29,7 +30,6 @@ public class RayCastSphere : MonoBehaviour
         {
 
             hits = Physics.SphereCastAll(transform.position, xSize / 2, transform.forward, maxDistance);
-            //bool isHit = Physics.SphereCastAll(transform.position, xSize / 2, maxDistance);
 
             float hitPlate1 = 0f;
             float hitPlate2 = 0f;
@@ -48,6 +48,10 @@ public class RayCastSphere : MonoBehaviour
             {
                 GameObject spawnedObject = Instantiate(SmeltCircle, new Vector3(transform.position.x, hitPlate1, transform.position.z - 0.2f), Quaternion.identity);
                 spawnedObject.transform.SetParent(CircleFolder.transform);
+                if (Spark.activeSelf == false)
+                {
+                    Spark.SetActive(true);
+                }
                 if (!isComplete)
                 {
                     if (CircleFolder.transform.childCount >= 200)
@@ -56,6 +60,13 @@ public class RayCastSphere : MonoBehaviour
                         videoPlayer.SetActive(true);
                     }
                 }
+            }
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            if (Spark.activeSelf == true)
+            {
+                Spark.SetActive(false);
             }
         }
     }

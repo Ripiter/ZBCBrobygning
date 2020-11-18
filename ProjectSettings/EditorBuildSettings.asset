@@ -41,7 +41,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OurOwnStuff/Scenes/AnlaegsGartner.unity
     guid: 765eaf00f61bf0c4187d9ae58d94fefe
-  - enabled: 1
+  - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Transport.unity
     guid: d56afb49692c57b40ad120c8e5cade8f
   - enabled: 0
@@ -62,4 +62,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Mekaniker.unity
     guid: a5761e37b92fc4840bf61c47ce03c8af
+  - enabled: 0
+    path: Assets/OurOwnStuff/Scenes/Lastvognsmekaniker.unity
+    guid: 74e99f73b8b1b804d8dfc1aa5f1a6505
+  - enabled: 1
+    path: Assets/OurOwnStuff/Scenes/Maler_Scene.unity
+    guid: d920b9fe6cad41a48b65fa38b8ea208f
   m_configObjects: {}
