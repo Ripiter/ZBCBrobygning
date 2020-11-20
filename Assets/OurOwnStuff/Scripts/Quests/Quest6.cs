@@ -74,11 +74,11 @@ public class Quest6 : Quest
         }
         else if (questCounter[1] < 3)
         {
-            QuestManager.questManager.questText.GetComponent<TextMeshProUGUI>().text = "Retsmedicineren har spildt kaffe";
+            QuestManager.questManager.questText.GetComponent<TextMeshProUGUI>().text = "Der er spildt kaffe i patient rum #3";
         }
-        else if (questCounter[2] < 3)
+        else if (questCounter[2] < 4)
         {
-            QuestManager.questManager.questText.GetComponent<TextMeshProUGUI>().text = "Put skraldet i skraldespanden";
+            QuestManager.questManager.questText.GetComponent<TextMeshProUGUI>().text = "Put skraldet i skraldespanden i patient rum #2";
         }
         else if(questCounter[3] < 4)
         {
@@ -93,6 +93,7 @@ public class Quest6 : Quest
         if (questCounter[0] >= 1 && questCounter[1] >= 3 && questCounter[2] >= 4 && questCounter[3] >= 5)
         {
             QuestManager.questManager.questText.GetComponent<TextMeshProUGUI>().text = "Færdig";
+            ActivateVideo.instance.StartVideo();
             //Enable video for victory
             if (QuestManager.questManager.victory != null)
                 QuestManager.questManager.victory.SetActive(true);

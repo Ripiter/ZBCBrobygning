@@ -13,7 +13,7 @@ public class WinDetector_Bager : MonoBehaviour
     {
         if (!isDone)
         {
-            GameObject cakeDone = GameObject.Find("cleancake 2 1(Clone)");
+            GameObject cakeDone = GameObject.Find("Cake1(Clone)");
             if (ovenObject.GetComponent<BakeBread>().isBaked && cakeDone != null)
             {
                 isDone = true;

@@ -22,6 +22,8 @@ public class QuestSixObjective : MonoBehaviour
         }
         quest = QuestManager.questManager.GetQuestFromID(6);
         QuestManager.questManager.LoadLevelText(quest.id);
+
+        quest.UpdateText();
     }
 
     // Update is called once per frame
@@ -62,7 +64,7 @@ public class QuestSixObjective : MonoBehaviour
         }
         catch (System.Exception e)
         {
-            Debug.Log(e.Message + " In quest six objective(EXPECTED)");
+
         }
 
 
@@ -76,7 +78,7 @@ public class QuestSixObjective : MonoBehaviour
         }
         catch (System.Exception e)
         {
-            Debug.Log("<color=red>Error: </color>" + e.Message);
+
         }
     }
 

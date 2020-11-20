@@ -8,6 +8,7 @@ public class RayCastSphere : MonoBehaviour
 
     public float xSize;
     public float lookDownDistance;
+    public GameObject Welder;
     public GameObject Spark;
     public GameObject SmeltCircle;
     public GameObject CircleFolder;
@@ -23,13 +24,12 @@ public class RayCastSphere : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            hits = Physics.SphereCastAll(transform.position, xSize / 2, transform.right, lookDownDistance);
+            hits = Physics.SphereCastAll(Welder.transform.position, xSize / 2, -transform.right, lookDownDistance);
 
             float hitPlate1 = 0f;
             float hitPlate2 = 0f;
             for (int i = 0; i < hits.Length; i++)
             {
-                Debug.Log(hits[i].collider.gameObject.name);
                 if (hits[i].collider.gameObject.name == "Plate1")
                 {
                     hitPlate1 = hits[i].collider.gameObject.transform.position.y;
@@ -70,18 +70,17 @@ public class RayCastSphere : MonoBehaviour
     //{
     //    RaycastHit hit;
 
-    //    bool isHit = Physics.SphereCast(transform.position, xSize / 2, -transform.up, out hit, lookDownDistance);
+    //    bool isHit = Physics.SphereCast(Welder.transform.position, xSize / 2, -transform.right, out hit, lookDownDistance);
     //    if (isHit)
-    //    {      
-    //        Debug.Log(hit.collider.gameObject.name);
+    //    {
     //        Gizmos.color = Color.red;
-    //        Gizmos.DrawRay(transform.position, -transform.up * hit.distance);
-    //        Gizmos.DrawWireSphere(transform.position + -transform.up * hit.distance, xSize / 2);
+    //        Gizmos.DrawRay(Welder.transform.position, -transform.right * hit.distance);
+    //        Gizmos.DrawWireSphere(Welder.transform.position + -transform.right * hit.distance, xSize / 2);
     //    }
     //    else
     //    {
     //        Gizmos.color = Color.green;
-    //        Gizmos.DrawRay(transform.position, -transform.up * lookDownDistance);
+    //        Gizmos.DrawRay(Welder.transform.position, -transform.right * lookDownDistance);
     //    }
     //}
 

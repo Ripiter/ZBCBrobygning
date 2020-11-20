@@ -28,9 +28,9 @@ public class CakeScript : MonoBehaviour
         switch (objectName)
         {
             case "Cake1":
-                return new Vector3(transform.position.x, transform.position.y - 0.91f, transform.position.z);
+                return new Vector3(transform.position.x, transform.position.y, transform.position.z);
             case "Cake2":
-                return new Vector3(transform.position.x, transform.position.y - 0.482f, transform.position.z);
+                return new Vector3(transform.position.x, transform.position.y, transform.position.z);
           
             default:
                 break;
