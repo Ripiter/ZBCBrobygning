@@ -976,7 +976,7 @@ MonoBehaviour:
   prefab: {fileID: 2729392586262489410, guid: 3cbbc2810c3ba8041b0fa6026452a430, type: 3}
   cube: {fileID: 1307934830416689856, guid: 9ac41ae52fe4de14187a3fb17b564206, type: 3}
   name: BackTyre
-  isTaken: 0
+  isTaken: 1
 --- !u!65 &550903097
 BoxCollider:
   m_ObjectHideFlags: 0

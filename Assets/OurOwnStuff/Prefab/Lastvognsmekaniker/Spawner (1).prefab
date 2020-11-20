@@ -109,3 +109,4 @@ MonoBehaviour:
   prefab: {fileID: 7902632013845342250, guid: ac490413f673d3f44979fa917c68103c, type: 3}
   cube: {fileID: 0}
   name: BackTyre
+  isTaken: 0

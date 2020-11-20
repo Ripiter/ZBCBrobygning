@@ -109,3 +109,4 @@ MonoBehaviour:
   prefab: {fileID: 3967414368975948496, guid: bbd696386f49a5045a6399151376de85, type: 3}
   cube: {fileID: 0}
   name: RightSideTyreBack
+  isTaken: 0

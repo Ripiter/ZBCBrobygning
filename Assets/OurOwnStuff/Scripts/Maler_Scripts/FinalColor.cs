@@ -25,6 +25,11 @@ public class FinalColor : MonoBehaviour
     {
         CheckColors();
         winAnnounce.text = "Du har blandet " + correctCount + " ud af 3 farver";
+        if (correctCount == 3)
+        {
+        winAnnounce.text = "Du har blandet alle farverne rigtigt. Du er nu færdig.";
+
+        }
     }
     bool TheSameColor(float h, float s, float v)
     {

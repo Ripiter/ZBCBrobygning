@@ -29,6 +29,6 @@ public class PaintValue : MonoBehaviour
     string OutputColorValues()
     {
         Color.RGBToHSV(color, out h, out s, out v);
-        return h + ",\n" + s + ",\n" + v;
+        return h.ToString("0.00") + ",\n" + s.ToString("0.00") + ",\n" + v.ToString("0.00");
     }
 }
