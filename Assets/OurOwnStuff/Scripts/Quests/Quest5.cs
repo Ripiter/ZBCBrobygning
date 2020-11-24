@@ -31,9 +31,7 @@ public class Quest5 : Quest
             {
                 questCounter[1]++;
                 UpdateText();
-
                 //SoundManager.soundManager.PlaySound();
-
             }
         }
         else if (objectivename.Equals("Correct piece"))
@@ -47,10 +45,13 @@ public class Quest5 : Quest
                 }
             }
         }
+
+        CheckForVictory();
     }
 
     public override void UpdateText()
     {
+        /*
         if (questCounter[1] <= 0)
         {
             QuestManager.questManager.questText.GetComponent<Text>().text = "Tilslut routeren til switchen";
@@ -63,16 +64,17 @@ public class Quest5 : Quest
         {
             QuestManager.questManager.questText.GetComponent<Text>().text = "Dit netværk køre!";
         }
-
+        */
         QuestManager.questManager.SetHandQuestText();
     }
 
     public override void CheckForVictory()
     {
-        if (questCounter[0] >= 8 && questCounter[1] >= 4 && questCounter[2] >= 9)
+        if (questCounter[0] >= 8 && questCounter[1] >= 3 && questCounter[2] >= 9)
         {
             //Enable video for victory
-            base.QuestComplete();
+            if(QuestManager.questManager.victory != null)
+                base.QuestComplete();
         }
     }
 }
