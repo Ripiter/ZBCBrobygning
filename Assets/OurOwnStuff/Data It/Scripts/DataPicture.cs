@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class DataPicture : MonoBehaviour
+public class DataPicture : MonoBehaviour, IInteract
 {
 
     public GameObject image;
@@ -12,9 +12,12 @@ public class DataPicture : MonoBehaviour
     public GameObject button;
     public TextMeshProUGUI text;
     public bool isFinished;
+
+    public string NameOfButton;
+
     void Start()
     {
-
+        InteractManager.instance.AddListener(this);
     }
 
     // Update is called once per frame
@@ -22,10 +25,10 @@ public class DataPicture : MonoBehaviour
     {
         text.text = "Du har mistet internettet, gå hen til væggen og start med at klikke på den røde knap";
     }
-    private void OnMouseOver()
-    {
 
-        if (Input.GetMouseButtonDown(0))
+    public void Interacted(GameObject _object)
+    {
+        if(_object.GetComponent<InteractScript>().StringValue == NameOfButton)
         {
             if (!isFinished)
             {
@@ -38,9 +41,5 @@ public class DataPicture : MonoBehaviour
 
             }
         }
-
-
-
     }
-
 }

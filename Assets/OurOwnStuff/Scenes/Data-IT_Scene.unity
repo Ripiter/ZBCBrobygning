@@ -2972,6 +2972,7 @@ MonoBehaviour:
   text: {fileID: 715622892}
   isFinished: 0
   pic: {fileID: 800398102}
+  NameOfButton: SecondButton
 --- !u!65 &339363271
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2985,6 +2986,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.007852555, y: 0.012539405, z: 0.013749332}
   m_Center: {x: -9.721074e-10, y: 0.008146211, z: 0.00001827686}
+--- !u!114 &339363272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339363266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68794eeec84436d449ae171d6b5fbc60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StringValue: SecondButton
 --- !u!1001 &360286630
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6915,6 +6929,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7626f4e86a387947b83b74bbc49877b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &800398103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800398101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68794eeec84436d449ae171d6b5fbc60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StringValue: FirstButton
 --- !u!1 &828605374 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4759685493242881582, guid: 3e37ed9ff72c7244e9b106beb002e70a,
@@ -7388,6 +7415,12 @@ MonoBehaviour:
   canRotate: 1
   isTrue: 0
   overrideLayer: 1
+--- !u!20 &899972587 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2548718998926922618, guid: dbe34d3d8fafdd247bbace2de82c1ce2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1835508617}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &923907510
 GameObject:
   m_ObjectHideFlags: 0
@@ -9468,6 +9501,11 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 715622892}
+    - target: {fileID: 8385013083994447182, guid: f211cf75902cce14da85c2ac080d8aac,
+        type: 3}
+      propertyPath: NameOfButton
+      value: FirstButton
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f211cf75902cce14da85c2ac080d8aac, type: 3}
 --- !u!1001 &1370820459
@@ -9815,6 +9853,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421260668}
   m_CullTransparentMesh: 0
+--- !u!1 &1425062989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2548718999201203177, guid: dbe34d3d8fafdd247bbace2de82c1ce2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1835508617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1425062994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425062989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d000691db75cd74cbcf21b7b9fe4637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 899972587}
 --- !u!1001 &1454004476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13732,6 +13789,20 @@ MonoBehaviour:
   text: {fileID: 715622892}
   isFinished: 0
   router: {fileID: 339363267}
+  NameOfButton: LastButton
+--- !u!114 &5809976606487599439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5809976606487599437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68794eeec84436d449ae171d6b5fbc60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StringValue: LastButton
 --- !u!4 &6107442585463285941 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3153397708646014116, guid: 2a3e19f3712dba64f8c5098967fff897,
