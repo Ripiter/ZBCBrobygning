@@ -53,11 +53,6 @@ public class Interactable : MonoBehaviour
             text.text = "Tag det nye emne ud og se filmen på tavlen";
             emne.SpawnCube();
             videoPlayer.SetActive(true);
-            videoPlayer.GetComponent<VideoPlayer>().playOnAwake = true;
-            if (videoPlayer.GetComponent<VideoPlayer>().isPlaying == false)
-            {
-                videoPlayer.GetComponent<VideoPlayer>().Play();
-            }
             
         }
 
