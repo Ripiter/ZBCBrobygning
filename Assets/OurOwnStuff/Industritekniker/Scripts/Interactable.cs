@@ -15,12 +15,13 @@ public class Interactable : MonoBehaviour
 
     public TextMeshProUGUI text;
 
-    public VideoPlayer videoPlayer;
+    public GameObject videoPlayer;
 
     // Start is called before the first frame update
     void Start()
     {
         text.text = "Sæt emnet der ligger på bordet ind i maskinen";
+        videoPlayer.SetActive(false);
     }
 
     public void InteractWithPlayer()
@@ -51,10 +52,8 @@ public class Interactable : MonoBehaviour
         {
             text.text = "Tag det nye emne ud og se filmen på tavlen";
             emne.SpawnCube();
-            if(videoPlayer.isPlaying == false)
-            {
-                videoPlayer.Play();
-            }
+            videoPlayer.SetActive(true);
+            
         }
 
     }
