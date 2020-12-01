@@ -11,7 +11,7 @@ public class FinalColor : MonoBehaviour
     Color color;
     public Text winAnnounce;
     int correctCount;
-    float threshold = 0.167f;
+    float threshold = 0.1f;
     // Start is called before the first frame update
     void Start()
     {

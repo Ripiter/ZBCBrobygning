@@ -53,7 +53,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OurOwnStuff/Scenes/SalgsAssistent.unity
     guid: f49996d445b48db42be1f142e55dae1b
-  - enabled: 1
+  - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Industritekniker.unity
     guid: 89c34a14e9fb1694493f3fa12b15fc94
   - enabled: 0
@@ -65,7 +65,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Lastvognsmekaniker.unity
     guid: 74e99f73b8b1b804d8dfc1aa5f1a6505
-  - enabled: 0
+  - enabled: 1
     path: Assets/OurOwnStuff/Scenes/Maler_Scene.unity
     guid: d920b9fe6cad41a48b65fa38b8ea208f
   - enabled: 0
