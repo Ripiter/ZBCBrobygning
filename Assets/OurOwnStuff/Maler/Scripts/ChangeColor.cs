@@ -86,11 +86,15 @@ public class ChangeColor : MonoBehaviour
 
         }
         Color newColor;
-        if (_other.GetComponent<Renderer>().material.color == new Color(0, 0, 0, 1) || _other.GetComponent<Renderer>().material.color == new Color(1, 1, 1, 1))
+        if (_other.GetComponent<Renderer>().material.color == new Color(0, 0, 0, 1) )
+        {
+            float avgV = (v + v2) / 2;
+            newColor = Color.HSVToRGB(h2, s2, avgV);
+        }
+        else if (_other.GetComponent<Renderer>().material.color == new Color(1, 1, 1, 1))
         {
             float avgS = (s + s2) / 2;
-            float avgV = (v + v2) / 2;
-            newColor = Color.HSVToRGB(h2, avgS, avgV);
+            newColor = Color.HSVToRGB(h2, avgS, v2);
         }
         else
         {
@@ -101,12 +105,12 @@ public class ChangeColor : MonoBehaviour
             }
             if (d <= 0.5) // 180deg
             {
-                h = h + 0.5f * d;
+                h = h + (0.5f * d);
             }
             float avgS = (s + s2) / 2;
-            //float avgV = (v + v2) / 2;
+            float avgV = (v + v2) / 2;
 
-            newColor = Color.HSVToRGB(h, avgS, v2);
+            newColor = Color.HSVToRGB(h, avgS, avgV);
         }
 
         renderer.material.color = newColor;
