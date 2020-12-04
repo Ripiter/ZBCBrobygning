@@ -1980,7 +1980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: Cap1
   prefab: {fileID: 8120125368230824847, guid: 0baeed1bbe586784685a072e0da25189, type: 3}
-  finishedSet: {fileID: 0}
+  finishedSet: {fileID: 1901581105}
   winDetector: {fileID: 0}
 --- !u!1 &2143475046
 GameObject:

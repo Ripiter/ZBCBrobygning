@@ -18,7 +18,6 @@ public class MoveObjectToPosition : MonoBehaviour
                 spawned.transform.rotation = transform.rotation;
                 spawned.transform.SetParent(finishedSet.transform);
                 Destroy(other.gameObject);
-                winDetector.GetComponent<WinDetector_Tjener>().CheckForWin(finishedSet.transform.childCount);
             }
         }
     }
