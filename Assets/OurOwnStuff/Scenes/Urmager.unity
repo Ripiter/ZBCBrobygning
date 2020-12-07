@@ -1063,7 +1063,7 @@ PrefabInstance:
     - target: {fileID: -7085485134348911811, guid: afb71bde300286b469953647ecb67dd4,
         type: 3}
       propertyPath: objectName
-      value: Cap1
+      value: Cap
       objectReference: {fileID: 0}
     - target: {fileID: 8120125368230824845, guid: afb71bde300286b469953647ecb67dd4,
         type: 3}
@@ -1975,13 +1975,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1901581105}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddef76c63e466f144b86e9f4463edee9, type: 3}
+  m_Script: {fileID: 11500000, guid: 8fda4b21413da1d4e93c2267b0955a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Cap1
+  objectName: Cap
   prefab: {fileID: 8120125368230824847, guid: 0baeed1bbe586784685a072e0da25189, type: 3}
-  finishedSet: {fileID: 1901581105}
-  winDetector: {fileID: 0}
 --- !u!1 &2143475046
 GameObject:
   m_ObjectHideFlags: 0
@@ -5538,22 +5536,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &565839626058855623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4607747620788191495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddef76c63e466f144b86e9f4463edee9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectName: Hours
-  prefab: {fileID: 5682852994597208977, guid: ef92d89d01742fb4fb3ee80f2ae3e7ff, type: 3}
-  finishedSet: {fileID: 0}
-  winDetector: {fileID: 0}
 --- !u!4 &568966892229034090
 Transform:
   m_ObjectHideFlags: 0
@@ -8933,8 +8915,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4452509808062185059}
   - component: {fileID: 1124317291337963200}
-  - component: {fileID: 1124317291337963201}
   - component: {fileID: 1124317291337963202}
+  - component: {fileID: 1124317291337963201}
   m_Layer: 0
   m_Name: Discs
   m_TagString: Untagged
@@ -8964,13 +8946,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1124317291337963199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddef76c63e466f144b86e9f4463edee9, type: 3}
+  m_Script: {fileID: 11500000, guid: 8fda4b21413da1d4e93c2267b0955a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Discs
   prefab: {fileID: 6212520813825694191, guid: 6175e6f1b7f639b4b85a4d47a712024d, type: 3}
-  finishedSet: {fileID: 0}
-  winDetector: {fileID: 0}
 --- !u!54 &1124317291337963202
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32131,8 +32111,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8596881712926961791}
   - component: {fileID: 4607747620788191496}
-  - component: {fileID: 565839626058855623}
   - component: {fileID: 4607747620788191497}
+  - component: {fileID: 4607747620788191498}
   m_Layer: 0
   m_Name: hours
   m_TagString: Untagged
@@ -32169,6 +32149,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4607747620788191498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4607747620788191495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fda4b21413da1d4e93c2267b0955a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Hours
+  prefab: {fileID: 5682852994597208977, guid: ef92d89d01742fb4fb3ee80f2ae3e7ff, type: 3}
 --- !u!23 &4610763899020359935
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54008,13 +54002,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8090617031175995155}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddef76c63e466f144b86e9f4463edee9, type: 3}
+  m_Script: {fileID: 11500000, guid: 8fda4b21413da1d4e93c2267b0955a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Needles
   prefab: {fileID: 31101452879087102, guid: e611242d3f2a5db4582b66d5068ca5f3, type: 3}
-  finishedSet: {fileID: 0}
-  winDetector: {fileID: 0}
 --- !u!1 &8091188543592819568
 GameObject:
   m_ObjectHideFlags: 0
@@ -59400,13 +59392,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8840326001979125897}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddef76c63e466f144b86e9f4463edee9, type: 3}
+  m_Script: {fileID: 11500000, guid: 8fda4b21413da1d4e93c2267b0955a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Disc
   prefab: {fileID: 2887420871695924746, guid: ba50df0d0d86c4d479839ec530103e35, type: 3}
-  finishedSet: {fileID: 0}
-  winDetector: {fileID: 0}
 --- !u!4 &8842158949460332662
 Transform:
   m_ObjectHideFlags: 0

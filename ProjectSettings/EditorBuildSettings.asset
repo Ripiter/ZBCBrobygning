@@ -65,7 +65,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Lastvognsmekaniker.unity
     guid: 74e99f73b8b1b804d8dfc1aa5f1a6505
-  - enabled: 1
+  - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Maler_Scene.unity
     guid: d920b9fe6cad41a48b65fa38b8ea208f
   - enabled: 0
@@ -74,4 +74,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OurOwnStuff/Scenes/VVS-Energiuddannelsen.unity
     guid: f0a41fdb0a2e18b429e87026d672661a
+  - enabled: 1
+    path: Assets/OurOwnStuff/Scenes/Urmager.unity
+    guid: 5383af358f316bb41a75f07776ebf98c
   m_configObjects: {}
