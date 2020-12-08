@@ -74,7 +74,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OurOwnStuff/Scenes/VVS-Energiuddannelsen.unity
     guid: f0a41fdb0a2e18b429e87026d672661a
-  - enabled: 1
+  - enabled: 0
     path: Assets/OurOwnStuff/Scenes/Urmager.unity
     guid: 5383af358f316bb41a75f07776ebf98c
+  - enabled: 1
+    path: Assets/OurOwnStuff/Scenes/Elektriker.unity
+    guid: 19dfb720cf0518544aeb45908912b57c
   m_configObjects: {}

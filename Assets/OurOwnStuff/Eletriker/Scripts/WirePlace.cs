@@ -32,10 +32,12 @@ public class WirePlace : MonoBehaviour
                 Instantiate(prefab, GetVector(other.gameObject.GetComponent<NameOfObject>().objectName), Quaternion.Euler(new Vector3(90, 90, 0)));
                 Destroy(other.gameObject);
                 Destroy(gameObject);
-                //GameObject.FindGameObjectWithTag("Player").GetComponent<MovementPlayer>().ChangePlayerState(true);
+
+                GetComponent<SwitchCanvas>().Switch();
+                
                 if (other.gameObject.GetComponent<NameOfObject>().objectName == name)
                 {
-                    canvas.SetActive(true);
+                    //canvas.SetActive(true);
                     text.text = "Træk ledning til den rigtige farve";
                 }
             }

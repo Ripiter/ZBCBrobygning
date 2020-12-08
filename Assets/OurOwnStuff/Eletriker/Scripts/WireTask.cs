@@ -21,7 +21,6 @@ public class WireTask : MonoBehaviour
 
 
     public GameObject Swtich;
-    public GameObject Bulb;
     public GameObject Light;
 
     public TextMeshProUGUI text;
@@ -75,9 +74,12 @@ public class WireTask : MonoBehaviour
             if (successfulWires >= rightWires.Count)
             {
                 gameObject.SetActive(false);
+
+                GetComponent<SwitchCanvas>().Switch();
+
                 //GameObject.FindGameObjectWithTag("Player").GetComponent<MovementPlayer>().ChangePlayerState(false);
+                
                 Swtich.GetComponent<Renderer>().material.color = Color.green;
-                Bulb.GetComponent<Renderer>().material.color = Color.yellow;
                 Light.SetActive(true);
             }
             else
